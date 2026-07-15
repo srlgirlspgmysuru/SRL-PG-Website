@@ -629,95 +629,7 @@ footer hr{
     gap:20px;
     flex-wrap:wrap;
 }
-/* ===========================
-   MOBILE RESPONSIVE
-=========================== */
 
-@media (max-width:768px){
-
-    header{
-        flex-direction:column;
-        padding:15px;
-    }
-
-    nav ul{
-        flex-direction:column;
-        gap:15px;
-        margin-top:15px;
-        text-align:center;
-    }
-
-    .hero{
-        flex-direction:column;
-        height:auto;
-        padding:120px 20px 60px;
-        text-align:center;
-    }
-
-    .hero-content{
-        width:100%;
-        text-align:center;
-    }
-
-    .hero-content h1{
-        font-size:40px;
-    }
-
-    .hero-content p{
-        font-size:18px;
-    }
-
-    .buttons{
-        justify-content:center;
-        flex-wrap:wrap;
-    }
-
-    .price-container{
-        margin-top:40px;
-        margin-left:0;
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .price-card{
-        width:95%;
-        max-width:350px;
-    }
-
-    .features-container,
-    .gallery-grid,
-    .testimonial-container,
-    .contact-container,
-    .footer-container{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .feature-box,
-    .testimonial-card,
-    .footer-box{
-        width:95%;
-        text-align:center;
-    }
-
-    .gallery-grid img{
-        width:100%;
-        max-width:350px;
-        height:240px;
-    }
-
-    .contact-map{
-        width:100%;
-    }
-
-    .cta h2{
-        font-size:30px;
-    }
-
-    .cta p{
-        font-size:17px;
-    }
-}
 /* ===========================
    FLOATING WHATSAPP
 =========================== */
@@ -811,23 +723,33 @@ footer hr{
 @media (max-width: 768px){
 
 header{
-    flex-direction:column;
-    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+}
+
+.logo{
+    font-size:24px;
 }
 
 nav ul{
     display:flex;
-    flex-direction:row;
     justify-content:center;
     align-items:center;
     flex-wrap:wrap;
-    gap:20px;
-    margin-top:10px;
+    gap:12px;
+    margin:0;
     padding:0;
 }
 
 nav ul li{
     margin:0;
+}
+
+nav ul li a{
+    font-size:15px;
+    padding:6px 8px;
 }
 
 nav ul li a{
